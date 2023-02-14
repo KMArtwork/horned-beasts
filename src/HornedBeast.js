@@ -10,7 +10,7 @@ class HornedBeast extends React.Component {
 
     render() {
         return(
-            <div>
+            <div class="beastBox">
                 <h2>{this.title}</h2>
                 <img src={this.imageUrl} alt={this.description} title={this.title} width="400" height='400' />
                 <p>{this.description}</p>

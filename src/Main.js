@@ -1,15 +1,14 @@
 import React from 'react';
+import data from './data.json';
 import HornedBeast from './HornedBeast';
 
 class Main extends React.Component {
     constructor(props){
         super(props);
-        this.beasts = props.beasts;
-        this.beastComponents = [];
+        this.beasts = data;
     }
 
     render() {
-        // this.createHornedBeastComponents(this.beasts);
         return (
             <main>
                {this.beasts.map(beast => {
