@@ -4,15 +4,24 @@ import HornedBeast from './HornedBeast';
 class Main extends React.Component {
     constructor(props){
         super(props);
+        this.beasts = props.beasts;
+        this.beastComponents = [];
+    }
 
+    createHornedBeastComponents(beastArr) {
+        beastArr.forEach(beast => {
+            this.beastComponents.push(<HornedBeast title={beast.title} imageUrl={beast.image_url} description={beast.description} />);
+        })
     }
 
     render() {
+        this.createHornedBeastComponents(this.beasts);
         return (
-            <div>
-                <HornedBeast title="Rhino Beetle" imageUrl="https://i.natgeofe.com/n/eecb9f72-d494-4894-9612-6a7adcb4bb8d/Japanese-rhino-beetle_4x3.jpg" description="A rhino beetle" />
-                <HornedBeast title="Tauros" imageUrl="https://img.pokemondb.net/artwork/large/tauros-blaze.jpg" description="A Tauros from the Paldea region" />
-            </div>
+            <main>
+                {this.beastComponents[0]}
+                {this.beastComponents[1]}
+                {this.beastComponents[2]}
+            </main>
         )
     }
 }
