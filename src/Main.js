@@ -8,12 +8,6 @@ class Main extends React.Component {
         this.beastComponents = [];
     }
 
-    createHornedBeastComponents(beastArr) {
-        beastArr.map(beast => {
-            <HornedBeast title={beast.title} imageUrl={beast.image_url} description={beast.description} />
-        })
-    }
-
     render() {
         // this.createHornedBeastComponents(this.beasts);
         return (
