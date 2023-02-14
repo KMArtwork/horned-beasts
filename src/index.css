@@ -30,5 +30,27 @@ main img {
 .beastBox {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   width: 420px;
+  margin: 2rem 0;
+}
+
+.beastBox > * {
+  padding: 0.25rem;
+  margin: 0.25rem;
+}
+
+#heart {
+  color: red;
+}
+
+#favoriteCount {
+  position: relative;
+  top: 410px;
+  left: 320px;
+  width: 70px;
+  color: white;
+  background-color: rgba(0, 0, 0, 50%);
+  border-radius: 10%;
+  font-size: 1.2rem;
 }

@@ -78,9 +78,9 @@ Estimate of time needed to complete: 45m
 
 Start time: 3:16PM
 
-Finish time: _____
+Finish time: 3:30PM
 
-Actual time needed to complete: _____
+Actual time needed to complete: 15m
 
 ### Feature Task 02: Allow Users to Favorite Individual Beasts
 
