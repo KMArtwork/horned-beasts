@@ -9,18 +9,18 @@ class Main extends React.Component {
     }
 
     createHornedBeastComponents(beastArr) {
-        beastArr.forEach(beast => {
-            this.beastComponents.push(<HornedBeast title={beast.title} imageUrl={beast.image_url} description={beast.description} />);
+        beastArr.map(beast => {
+            <HornedBeast title={beast.title} imageUrl={beast.image_url} description={beast.description} />
         })
     }
 
     render() {
-        this.createHornedBeastComponents(this.beasts);
+        // this.createHornedBeastComponents(this.beasts);
         return (
             <main>
-                {this.beastComponents[0]}
-                {this.beastComponents[1]}
-                {this.beastComponents[2]}
+               {this.beasts.map(beast => {
+                return <HornedBeast title={beast.title} imageUrl={beast.image_url} description={beast.description} />
+                })}
             </main>
         )
     }
