@@ -1,5 +1,12 @@
 * {
   margin: 0;
+  
+}
+
+header {
+  padding: 2rem;
+  background-color: rgb(17, 28, 77);
+  color: white;
 }
 
 body {
@@ -11,6 +18,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+footer {
+  padding: 1rem 0;
+  background-color: rgb(17, 28, 77);
+  color: white;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -20,12 +33,13 @@ main {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  background-color: rgb(47, 56, 99);
 }
 
-main img {
+/* main img {
   margin: 0.5rem;
   padding: 0.5rem;
-}
+} */
 
 .beastBox {
   display: flex;
@@ -35,22 +49,15 @@ main img {
   margin: 2rem 0;
 }
 
-.beastBox > * {
+/* .beastBox > * {
   padding: 0.25rem;
   margin: 0.25rem;
-}
+} */
 
 #heart {
   color: red;
 }
 
 #favoriteCount {
-  position: relative;
-  top: 410px;
-  left: 320px;
-  width: 70px;
-  color: white;
-  background-color: rgba(0, 0, 0, 50%);
-  border-radius: 10%;
   font-size: 1.2rem;
 }

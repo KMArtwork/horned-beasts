@@ -7,7 +7,7 @@ import Main from './Main';
 function App() {
   return (
     <div className="App">
-      <Header title="Lab 01 | My First React App" />
+      <Header title="Horned Beasts" />
       <Main />
       <Footer author="Kawika Miller" />
     </div>
