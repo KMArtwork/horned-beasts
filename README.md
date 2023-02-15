@@ -68,3 +68,52 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+## Lab 02 - Time Estimates
+
+### Feature Task 01: Display Images
+
+Estimate of time needed to complete: 45m
+
+Start time: 3:16PM
+
+Finish time: 3:30PM
+
+Actual time needed to complete: 15m
+
+### Feature Task 02: Allow Users to Favorite Individual Beasts
+
+Estimate of time needed to complete: 60m
+
+Start time: 3:30PM
+
+Finish time: 3:50PM
+
+Actual time needed to complete: 20m
+
+*Getting the minimum functionality to handle clicks and display that on screen took about 10m but I also tweaked some CSS which probably took about another 10minutes; 
+
+### Feature Task 03: Bootstrap
+
+Estimate of time needed to complete: 60m
+
+Start time: 3:52PM
+
+Finish time: 5:20PM
+
+Actual time needed to complete: 88m / 71m if not including snack time
+
+*From 3:52 - 4:11 I reviewed the Bootstrap documentation. From 4:11 - 4:28 I took a quick snack break.
+
+### Stretch Goal: Add Interaction
+
+Estimate of time needed to complete: 60m
+
+Start time: 5:25PM
+
+Finish time: 5:39PM
+
+Actual time needed to complete: 14m
+
+*Spent 5:39 - 5:52 trying to figure out how to pass a function as a prop? Right now, I have a function in my Header.js file that changes the colors of certain elements when the header element is clicked. Is it possible to nest that function in App.js and then pass it as a prop to my Header, Main, and Footer .js files so that they can all inherit that function behavior as an `onClick`? As opposed to me just copy/pasting the function in each .js file and then giving them `onClick` event handlers?
