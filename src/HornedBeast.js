@@ -27,7 +27,7 @@ class HornedBeast extends React.Component {
             //     <p>{this.description}</p>
             // </div>
 
-            <Card style={{width: '400px', margin: '1rem'}}>
+            <Card style={{width: '400px', margin: '1rem', backgroundColor: 'blue', color: 'white'}}>
                 <Card.Header as='h4'>{this.title}</Card.Header>
                 <Card.Img variant="top" src={this.imageUrl} alt={this.description} title={this.title} style={{width: 'auto', height: '400px',}}/>
                 <Card.Body>
