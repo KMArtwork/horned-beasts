@@ -1,6 +1,6 @@
 import React from 'react';
 // import Image from 'react-bootstrap/Image'
-import data from './data.json';
+// import data from './data.json';
 import HornedBeast from './HornedBeast';
 
 class Main extends React.Component {
@@ -12,7 +12,7 @@ class Main extends React.Component {
     render() {
         return (
             <main>
-                {data.map(beast => {
+                {this.props.data.map(beast => {
                     return <HornedBeast beast={beast} updateModalBeast={this.props.updateModalBeast} />
                 })}
             </main>
