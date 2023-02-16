@@ -1,50 +1,41 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import SelectedBeast from './SelectedBeast';
 
-// class HornedBeast extends React.Component {
-//     constructor(props) {
-//         super(props);
-//         // this.title = props.title;
-//         // this.imageUrl = props.imageUrl;
-//         // this.description = props.description;
+class HornedBeast extends React.Component {
+    constructor(props) {
+        super(props);
 
-//         this.state = {
-//             favorites: 0,
-//         }
-//     }
-
-function HornedBeast(props) {
-
-    const [favorites, setFavorites] = useState(0);
-
-    const handleClick = () => {
-        // this.setState({ favorites: this.state.favorites + 1 });
-        setFavorites(favorites + 1);
+        this.state = {
+            favorites: 0,
+        }
     }
 
-    // render() {
+    handleClick = () => {
+        this.setState({ favorites: this.state.favorites + 1 });
+    }
+
+    render() {
         return(
-            <Card style={{width: '400px', margin: '1rem', backgroundColor: 'blue', color: 'white'}}>
-                <Card.Header as='h4'>{props.title}</Card.Header>
-                <Card.Img 
-                    onClick={() => props.handleCardClick(props.beast)} 
+            <Card style={{width: '350px', margin: '1rem', backgroundColor: 'blue', color: 'white'}}>
+                <Card.Header as='h4'>{this.props.beast.title}</Card.Header>
+                <Card.Img
+                    onClick={() => this.props.updateModalBeast(this.props.beast)} 
                     variant="top" 
-                    src={props.imageUrl} 
-                    alt={props.description} 
-                    title={props.title} 
-                    style={{width: 'auto', height: '400px',}}
-                />
+                    src={this.props.beast.image_url} 
+                    alt={this.props.beast.description} 
+                    title={this.props.beast.title} 
+                    style={{width: 'auto', height: '250px', cursor: 'pointer'}}
+                    />
                 <Card.Body>
-                    {/* <Card.Title>{title}</Card.Title> */}
-                    <Card.Text>{props.description}</Card.Text>
+                    {/* <Card.Title>{this.props.beast.title}</Card.Title> */}
+                    <Card.Text>{this.props.beast.description}</Card.Text>
                 </Card.Body>
-                <Button variant="primary" onClick={handleClick} style={{fontSize: '1.2rem',}}><span id='heart'>♥</span> x {favorites}</Button>
-                <SelectedBeast />
+                <Button variant="primary" onClick={this.handleClick} style={{fontSize: '1.2rem',}}><span id='heart'>♥</span> x {this.state.favorites}</Button>
             </Card>
         )
+        
     }
-// }
+}
 
 export default HornedBeast;

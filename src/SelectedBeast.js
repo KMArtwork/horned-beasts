@@ -1,23 +1,31 @@
 import React from 'react';
 import Modal from 'react-bootstrap/Modal';
 
-function SelectedBeast(props) {
+class SelectedBeast extends React.Component {
+    constructor(props) {
+        super(props);
 
-    return (
-        <>
-            <Modal show={props.show} onHide={props.handleClose} size='lg'>
+        this.state = {
+            show: false,
+        }
+    }
+
+    render() {
+        return(
+            <Modal centered size='lg' show={this.props.show} onHide={this.props.handleOnHide} >
                 <Modal.Header closeButton>
-                    <Modal.Title>{props.title}</Modal.Title>
+                    <Modal.Title >
+                        {this.props.title}
+                        <p style={{textAlign: 'center', fontSize: '0.85rem', margin: 0}}>Horns: {this.props.horns}</p>
+                    </Modal.Title>
                 </Modal.Header>
-                <Modal.Body style={{display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                <img src={props.img} width="600" height="auto" alt={props.description} />
-                <p>{props.description}</p>
-                <p>{`Number of horns: ${props.horns}`}</p>
+                <Modal.Body style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+                    <img src={this.props.img} alt={this.props.description} style={{maxWidth: '500px', height: 'auto'}} />
+                    <p>{this.props.description}</p>
                 </Modal.Body>
-
             </Modal>
-        </>
-    )
+        );
+    }
 }
 
 export default SelectedBeast;
