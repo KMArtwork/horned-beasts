@@ -21,6 +21,7 @@ class Header extends React.Component {
             cards.forEach(card => card.style.backgroundColor = 'red');
             let buttons = document.querySelectorAll('button');
             buttons.forEach(button => button.style.backgroundColor = 'darkred');
+            buttons.forEach(button => button.style.border = 'none');
             let hearts = document.querySelectorAll('#heart');
             hearts.forEach(heart => heart.style.color = 'deepskyblue');
         } else if (this.state.colorMode === 1) {
@@ -32,6 +33,7 @@ class Header extends React.Component {
             cards.forEach(card => card.style.backgroundColor = 'blue');
             let buttons = document.querySelectorAll('button');
             buttons.forEach(button => {button.style.backgroundColor = '#0d6efd';});
+            buttons.forEach(button => button.style.border = 'none');
             let hearts = document.querySelectorAll('#heart');
             hearts.forEach(heart => heart.style.color = 'red');
         }
