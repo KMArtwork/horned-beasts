@@ -6,14 +6,14 @@ import HornedBeast from './HornedBeast';
 class Main extends React.Component {
     constructor(props){
         super(props);
-        this.beasts = data;
+        console.log('evade useless constructor warning');
     }
 
     render() {
         return (
             <main>
-                {this.beasts.map(beast => {
-                    return <HornedBeast title={beast.title} imageUrl={beast.image_url} description={beast.description} />
+                {data.map(beast => {
+                    return <HornedBeast beast={beast} updateModalBeast={this.props.updateModalBeast} />
                 })}
             </main>
         )
