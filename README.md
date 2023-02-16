@@ -117,3 +117,15 @@ Finish time: 5:39PM
 Actual time needed to complete: 14m
 
 *Spent 5:39 - 5:52 trying to figure out how to pass a function as a prop? Right now, I have a function in my Header.js file that changes the colors of certain elements when the header element is clicked. Is it possible to nest that function in App.js and then pass it as a prop to my Header, Main, and Footer .js files so that they can all inherit that function behavior as an `onClick`? As opposed to me just copy/pasting the function in each .js file and then giving them `onClick` event handlers?
+
+## Lab 03 - Time Estimates
+
+### Feature Task 01 - Display a Modal
+
+Estimate of time needed to complete: 30 - 45m
+
+Start time: 2:57PM
+
+Finish time: 5:47PM
+
+Actual time needed to complete: 2HR 50M
