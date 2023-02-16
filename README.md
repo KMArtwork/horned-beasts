@@ -129,3 +129,9 @@ Start time: 2:57PM
 Finish time: 5:47PM
 
 Actual time needed to complete: 2HR 50M
+
+### Feature Task 01 - Display a Model (retry)
+
+Start time: ~10:00-10:15PM
+
+Finish time: ~11:40PM
