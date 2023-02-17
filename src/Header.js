@@ -18,7 +18,7 @@ class Header extends React.Component {
             document.querySelector('main').style.backgroundColor = 'rgb(97, 47, 47)';
             document.querySelector('footer').style.backgroundColor = 'rgb(77, 17, 17)';
             let cards = document.querySelectorAll('div .card');
-            cards.forEach(card => card.style.backgroundColor = 'red');
+            cards.forEach(card => card.setAttribute('class', 'card bg-danger'));
             let buttons = document.querySelectorAll('button');
             buttons.forEach(button => button.style.backgroundColor = 'darkred');
             buttons.forEach(button => button.style.border = 'none');
@@ -30,9 +30,9 @@ class Header extends React.Component {
             document.querySelector('main').style.backgroundColor = 'rgb(47, 56, 99)';
             document.querySelector('footer').style.backgroundColor = 'rgb(17, 28, 77)';
             let cards = document.querySelectorAll('div .card');
-            cards.forEach(card => card.style.backgroundColor = 'blue');
+            cards.forEach(card => card.setAttribute('class', 'card bg-primary'));
             let buttons = document.querySelectorAll('button');
-            buttons.forEach(button => {button.style.backgroundColor = '#0d6efd';});
+            buttons.forEach(button => {button.style.backgroundColor = '#00348b'});
             buttons.forEach(button => button.style.border = 'none');
             let hearts = document.querySelectorAll('#heart');
             hearts.forEach(heart => heart.style.color = 'red');
