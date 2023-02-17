@@ -144,6 +144,6 @@ Estimate of time needed to complete: 90m
 
 Start time: 3:10PM
 
-Finish time: 
+Finish time: 4:17PM
 
-Actual time needed to complete: 
+Actual time needed to complete: 67m
