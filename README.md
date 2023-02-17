@@ -135,3 +135,15 @@ Actual time needed to complete: 2HR 50M
 Start time: ~10:00-10:15PM
 
 Finish time: ~11:40PM
+
+## Lab 04 - Time Estimates
+
+### Feature Task 01 - Filter by Number of Horns
+
+Estimate of time needed to complete: 90m
+
+Start time: 3:10PM
+
+Finish time: 4:17PM
+
+Actual time needed to complete: 67m

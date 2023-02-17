@@ -17,7 +17,7 @@ class HornedBeast extends React.Component {
 
     render() {
         return(
-            <Card style={{width: '350px', margin: '1rem', backgroundColor: 'blue', color: 'white'}}>
+            <Card bg={'primary'} style={{width: '350px', maxHeight: '462.50px', margin: '1rem', color: 'white'}}>
                 <Card.Header as='h4'>{this.props.beast.title}</Card.Header>
                 <Card.Img
                     onClick={() => this.props.updateModalBeast(this.props.beast)} 
@@ -31,7 +31,7 @@ class HornedBeast extends React.Component {
                     {/* <Card.Title>{this.props.beast.title}</Card.Title> */}
                     <Card.Text>{this.props.beast.description}</Card.Text>
                 </Card.Body>
-                <Button variant="primary" onClick={this.handleClick} style={{fontSize: '1.2rem',}}><span id='heart'>♥</span> x {this.state.favorites}</Button>
+                <Button onClick={this.handleClick} style={{fontSize: '1.2rem', backgroundColor: '#00348b'}}><span id='heart'>♥</span> x {this.state.favorites}</Button>
             </Card>
         )
         
